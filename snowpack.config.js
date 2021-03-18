@@ -1,17 +1,12 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    'test/demo': '/',
-    src: '/dist',
+    'demo/esm': '/',
     'src/img': '/img',
-  },
-  installOptions: {
-    installTypes: true,
-    namedExports: ['@toast-ui/toastmark'],
+    src: '/dist',
   },
   devOptions: {
     port: 8080,
-    fallback: './editor.html',
   },
   buildOptions: {
     clean: true,
